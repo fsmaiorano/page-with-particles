@@ -1,6 +1,6 @@
 # Page with ParticlesJS
 
-This is a test page using ParticlesJS.
+Simple page with ParticlesJS.
 
 ## Development mode
 
@@ -18,3 +18,4 @@ $ yarn build:dev
 
 ```
 $ yarn build:pro
+```
