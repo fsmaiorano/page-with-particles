@@ -1,0 +1,134 @@
+.apresentation {
+  &__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #ffffff;
+    font-size: 6rem;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.section-about {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 2rem 12rem;
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  @include respond(big-desktop) {
+    height: 50rem;
+    padding: 2rem 12rem;
+  }
+
+  @include respond(tab-land) {
+    height: 40rem;
+    padding: 2rem 10rem;
+    text-align: center;
+  }
+
+  @include respond(tab-port) {
+    height: 30rem;
+    padding: 0;
+    font-size: 6rem;
+    text-align: center;
+  }
+
+  @include respond(phone) {
+    height: 30rem;
+    padding: 0;
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  p {
+    font-size: 3.2rem;
+    margin-left: 0.5px;
+    @include respond(tab-port) {
+      font-size: 2.9rem;
+      text-align: center;
+      margin-top: -11px;
+    }
+
+    @include respond(phone) {
+      font-size: 2.5rem;
+      text-align: center;
+    }
+  }
+
+  h1 {
+    @include respond(tab-port) {
+      font-size: 6rem;
+      text-align: center;
+    }
+
+    @include respond(phone) {
+      font-size: 5rem;
+      text-align: center;
+    }
+  }
+
+  &__actions {
+    width: 100%;
+    margin-top: 3rem;
+
+    @include respond(tab-port) {
+      margin-top: -33px;
+    }
+
+    @include respond(phone) {
+      margin-top: -10px;
+    }
+
+    a {
+      margin-left: 75rem;
+      margin-top: 13px;
+
+      @include respond(tab-land) {
+        margin-left: 0;
+        font-size: 1.8rem;
+      }
+
+      @include respond(tab-port) {
+        font-size: 1.6rem;
+      }
+
+      @include respond(phone) {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+
+.section-categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+
+  img {
+    height: 35vw;
+    flex: 1;
+    // transition: all 0.5s;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  img:nth-child(1) {
+    background-image: url("https://images.unsplash.com/photo-1549483252-c33edf3b7bf7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1231&q=80");
+  }
+  img:nth-child(2) {
+    background-image: url("https://images.unsplash.com/photo-1549740425-5e9ed4d8cd34?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+  }
+  img:nth-child(3) {
+    background-image: url("https://images.unsplash.com/photo-1549758895-6eab7830c05d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
+  }
+  img:nth-child(4) {
+    background-image: url("https://images.unsplash.com/photo-1549409465-3e1de3852106?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
+  }
+}
